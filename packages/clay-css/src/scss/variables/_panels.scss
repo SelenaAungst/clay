@@ -21,7 +21,7 @@ $panel-header-offset-border-radius: calc(
 ) !default;
 $panel-header-font-size: $font-size-base !default;
 $panel-header-line-height: $headings-line-height !default;
-$panel-header-padding-x: 1.25rem !default;
+$panel-header-padding-x: 1.5rem !default;
 $panel-header-padding-y: 0.75rem !default;
 
 $panel-header-collapse-icon-font-size: 0.875rem !default; // 14px
@@ -71,7 +71,7 @@ $panel-header-collapsed-link: map-deep-merge(
 
 // Panel Body
 
-$panel-body-padding-x: 1.25rem !default;
+$panel-body-padding-x: 1.5rem !default;
 $panel-body-padding-y: 0.75rem !default;
 
 // Panel Footer
