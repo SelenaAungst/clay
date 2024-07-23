@@ -92,7 +92,10 @@ function ClayNavigationBar({
 			>
 				<ClayLayout.ContainerFluid>
 					<ClayButton
+						aria-activedescendant=""
 						aria-expanded={expanded}
+						aria-haspopup="listbox"
+						aria-label='Current Selection: ${triggerLabel}'
 						className={classNames(
 							'navbar-toggler',
 							'navbar-toggler-link',
@@ -103,6 +106,7 @@ function ClayNavigationBar({
 						data-testid="navbarToggler"
 						displayType="unstyled"
 						onClick={() => setExpanded(!expanded)}
+						role="combobox"
 					>
 						<span className="navbar-text-truncate">
 							{triggerLabel}
@@ -137,7 +141,7 @@ function ClayNavigationBar({
 					>
 						<div>
 							<ClayLayout.ContainerFluid>
-								<ul className="navbar-nav">{children}</ul>
+								<ul className="navbar-nav" role="listbox">{children}</ul>
 							</ClayLayout.ContainerFluid>
 						</div>
 					</CSSTransition>

@@ -29,7 +29,7 @@ const ClayNavigationBarIcon = ({
 	const {ariaCurrent} = useContext(NavigationBarContext);
 
 	return (
-		<li {...otherProps} className={classNames('nav-item', className)}>
+		<li {...otherProps} className={classNames('nav-item', className)} role="option">
 			{React.Children.map(
 				children,
 				(child: React.ReactElement<IItemProps>, index) => {
